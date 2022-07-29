@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>卡洛里紀錄器</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav>
+        <div class="nav-wrapper blue">
+            <div class="container">
+                <a href="#" class="brand-logo center">卡洛里紀錄器</a>
+                <ul class="right">
+                    <li><a href="#" class="clear-btn btn blue lighten-3">清除全部</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <div class="container">
+        <!--Form card-->
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">加入餐點/食物</span>
+                <form class="col">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input type="text" placeholder="新增餐點" id="item-name">
+                            <label for="item-name">餐點</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input type="number" placeholder="新增卡洛里" id="item-calories">
+                            <label for="item-calories">卡洛里</label>
+                        </div>
+                    <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> 新增餐點</button>
+                    <button class="update-btn btn orange "><i class="fa fa-pencil-square-o"></i> 更新餐點</button>
+                    <button class="delete-btn btn red"><i class="fa fa-remove"></i> 移除餐點</button>
+                    <button class="back-btn btn grey pull-right"><i class="fa fa-chevron-cicle-left"></i> 返回</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+     <!--卡洛里計算-->   
+     <h3 class="center-align">卡洛里總計: <span class="total-calories">0</span></h3>
+
+     <!--餐點清單-->
+     <ul id="item-list" class="collection">
+     <!--
+        <li class="collection-item" id="item-0">
+            <strong>牛排:</strong> <em>1200卡</em>
+            <a href="#" class="secondary-content">
+                <i class="edit-item fa fa-pencil"></i>
+            </a>
+        </li>
+        <li class="collection-item" id="item-0">
+            <strong>餅乾: </strong> <em>400卡</em>
+            <a href="#" class="secondary-content">
+                <i class="edit-item fa fa-pencil"></i>
+            </a>
+        </li>
+        <li class="collection-item" id="item-0">
+            <strong>蛋蛋: </strong> <em>300卡</em>
+            <a href="#" class="secondary-content">
+                <i class="edit-item fa fa-pencil"></i>
+            </a>
+        </li>
+        -->
+     </ul>
+    </div>
+
+ 
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>  
+    <script src="app.js"></script>
+</body>
+</html>
